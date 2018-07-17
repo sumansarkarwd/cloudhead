@@ -1,0 +1,68 @@
+{# templates/pages/index.html.twig #}
+{% extends 'includes/app.html.twig' %}
+
+{# page title #}
+{% block title %} Cloudhead Technologies Private Limited {% endblock %}
+
+{# Meta Description #}
+{% block meta_description %} Cloudhead Technologies is an Information Technology Solutions
+    & Services provider, specializing in Web and Application Development, Mobile Application,
+    Business Process Operations & Automations, E-commerce, ISO Consulting - Audits - Certifications,
+    Process Consulting, Cloud and IT Security Consulting and Training provider.{% endblock %}
+
+{# Content goes here #}
+{% block content %}
+<div class="services_con cf">
+	<div class="max_width_800px">
+		<img src="img/services/wordpress_joomla_drupal.png" class="img-responsive" alt="Wordpress, Joomla, Drupal">
+	</div>
+	<br>
+	<div class="col-md-8 services_paragraph">
+		<p>
+			The best websites today are powered by easy to use content management
+			systems (CMS) that allow you to make changes to a website without needing
+			to touch a single line of code.
+		</p>
+		<p>
+			WordPress, Joomla and Drupal all offer great features, tons of customizaions, ease-of-use, and strong security.
+		</p>
+		<p>Choosing the right one can be difficult because they’re all good options.
+			But chances are, one of these three will fit your unique situation the best
+				(whether that’s firing up a simple business website or running a fully
+				functioning social network).
+			</p>
+			<ul class="list-group box-shadow">
+				<li class="list-group-item my_accordion current">
+					<h4 class="accordion_title">#1 – WordPress</h4>
+					<p class="accordion_body">
+						Best choice for beginners because of it’s ease-of-use,
+						it works especially well for small to medium sized websites,
+						blogs and smaller e-commerce stores.
+					</p>
+				</li>
+				<li class="list-group-item my_accordion">
+					<h4 class="accordion_title">#2 - Joomla </h4>
+					<p class="accordion_body">
+						Great for e-commerce or social networking websites, but requires
+						a basic understanding of technical skills.
+					</p>
+				</li>
+				<li class="list-group-item my_accordion">
+					<h4 class="accordion_title">#3- Drupal </h4>
+					<p class="accordion_body">
+						The most difficult, but also the most powerful. It requires a
+						familiar understanding of HTML, CSS and PHP.
+					</p>
+			</li></ul>
+	</div>
+	<div class="col-md-4 services_links ">
+		<ul class="list-group box-shadow">
+			<li class="list-group-item heading"><h4>Related Links</h4></li>
+			<li class="list-group-item"><a href="php-web-application">PHP Web Application</a></li>
+			<li class="list-group-item"><a href="wordpress-joomla-drupal">Wordpress, Joomla, Drupal</a></li>
+			<li class="list-group-item"><a href="blog-design">Blog Design</a></li>
+			<li class="list-group-item"><a href="php-frameworks">Laravel, Symfony, Codeigniter</a></li>
+		</ul>
+	</div>
+</div>
+{% endblock %}

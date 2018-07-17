@@ -1,0 +1,110 @@
+#index:
+#    path: /
+#    defaults: { _controller: 'App\Controller\DefaultController::index' }
+home:
+  path:           /
+  controller:     App\Controller\PagesController::index
+home_page:
+  path:           /home
+  controller:     App\Controller\PagesController::index
+#paegs
+overview:
+  path:           /overview
+  controller:     App\Controller\PagesController::overview
+team:
+  path:           /team
+  controller:     App\Controller\PagesController::team  
+story:
+  path:           /story
+  controller:     App\Controller\PagesController::story
+career:
+  path:           /career
+  controller:     App\Controller\PagesController::career
+portfolio:
+  path:           /portfolio
+  controller:     App\Controller\PagesController::portfolio
+clients:
+  path:           /clients
+  controller:     App\Controller\PagesController::clients
+works:
+  path:           /works
+  controller:     App\Controller\PagesController::works
+contact:
+  path:           /contact
+  controller:     App\Controller\PagesController::contact
+#services
+responsive-web-design:
+  path:           /responsive-web-design
+  controller:     App\Controller\PagesController::responsive_web_design
+seo-friendly-web-design:
+  path:           /seo-friendly-web-design
+  controller:     App\Controller\PagesController::seo_friendly_web_design
+static-dynamic-web-design:
+  path:           /static-dynamic-web-design
+  controller:     App\Controller\PagesController::static_dynamic_web_design
+psd-to-html:
+  path:           /psd-to-html
+  controller:     App\Controller\PagesController::psd_to_html
+wordpress-websites:
+  path:           /wordpress-websites
+  controller:     App\Controller\PagesController::wordpress_websites
+
+php-web-application:
+  path:           /php-web-application
+  controller:     App\Controller\PagesController::php_web_application
+wordpress-joomla-drupal:
+  path:           /wordpress-joomla-drupal
+  controller:     App\Controller\PagesController::wordpress_joomla_drupal
+blog-design:
+  path:           /blog-design
+  controller:     App\Controller\PagesController::blog_design
+php-frameworks:
+  path:           /php-frameworks
+  controller:     App\Controller\PagesController::php_frameworks
+
+ecommerce-portal:
+  path:           /ecommerce-portal
+  controller:     App\Controller\PagesController::ecommerce_portal
+
+
+pay-per-click:
+  path:           /pay-per-click
+  controller:     App\Controller\PagesController::pay_per_click
+social-media-promotion:
+  path:           /social-media-promotion
+  controller:     App\Controller\PagesController::social_media_promotion
+email-markating:
+  path:           /email-markating
+  controller:     App\Controller\PagesController::email_markating
+
+android-app-development:
+  path:           /android-app-development
+  controller:     App\Controller\PagesController::android_app_development
+ios-app-development:
+  path:           /ios-app-development
+  controller:     App\Controller\PagesController::ios_app_development
+cross-platform-app-development:
+  path:           /cross-platform-app-development
+  controller:     App\Controller\PagesController::cross_platform_app_development
+
+#admin area
+admin-login:
+  path:           /admin/login
+  controller:     App\Controller\AdminController::login
+admin-logout:
+  path:           /admin/logout
+  controller:     App\Controller\AdminController::logout
+admin-dashboard:
+  path:           /admin/dashboard
+  controller:     App\Controller\AdminController::dashboard
+address:
+  path:           /admin/dashboard/adderss
+  controller:     App\Controller\AdminController::address
+address-show:
+  path:           /admin/dashboard/adderss-show
+  controller:     App\Controller\AdminController::address_index
+
+#iso-certifications
+iso-certifications:
+  path: /iso-certifications
+  controller: App\Controller\IsoController::index

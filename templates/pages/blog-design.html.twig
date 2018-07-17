@@ -1,0 +1,53 @@
+{# templates/pages/index.html.twig #}
+{% extends 'includes/app.html.twig' %}
+
+{# page title #}
+{% block title %} Cloudhead Technologies Private Limited {% endblock %}
+
+{# Meta Description #}
+{% block meta_description %} Cloudhead Technologies is an Information Technology Solutions
+    & Services provider, specializing in Web and Application Development, Mobile Application,
+    Business Process Operations & Automations, E-commerce, ISO Consulting - Audits - Certifications,
+    Process Consulting, Cloud and IT Security Consulting and Training provider.{% endblock %}
+
+{# Content goes here #}
+{% block content %}
+<div class="services_con cf">
+	<div class="max_width_800px">
+		<img src="img/services/blog_design.jpg" class="img-responsive" alt="Blog Desing">
+	</div>
+	<br>
+	<div class="col-md-8 services_paragraph">
+		<div class="s_question_con">
+			<div class="s_q">
+				<h4>What is a Blog?</h4>
+			</div>
+			<div class="s_a">
+					<blockquote>
+						<p class="text-justify">
+							‘A blog is basically a journal that is available on the web.
+								The activity of updating a blog is “blogging” and someone who
+								keeps a blog is a “blogger.” Blogs are typically updated daily
+								using software that allows people with little or no technical
+								background to update and maintain the blog. Postings on a blog
+								are almost always arranged in cronological order with the most
+								recent additions featured most prominantly.’
+							</p>
+					</blockquote>
+				<p class="text-justify">
+					Blogs are usually (but not always) written by one person and are updated pretty regularly. Blogs are often (but not always) written on a particular topic – there are blogs on virtually any topic you can think of. From photography, to spirituality, to recipes, to personal diaries to hobbies – blogging has as many applications and varieties as you can imagine. Whole blog communities have sprung up around some of these topics putting people into contact with each other in relationships where they can learn, share ideas, make friends with and even do business with people with similar interests from around the world.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4 services_links ">
+		<ul class="list-group box-shadow">
+			<li class="list-group-item heading"><h4>Related Links</h4></li>
+			<li class="list-group-item"><a href="php-web-application">PHP Web Application</a></li>
+			<li class="list-group-item"><a href="wordpress-joomla-drupal">Wordpress, Joomla, Drupal</a></li>
+			<li class="list-group-item"><a href="blog-design">Blog Design</a></li>
+			<li class="list-group-item"><a href="php-frameworks">Laravel, Symfony, Codeigniter</a></li>
+		</ul>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}{% endblock %}">
+    <meta name="keywords" content="{% block keywords %}{% endblock %}">
+    <link rel="icon" href="{{ asset('img/favicon.png') }}" type="image/png" sizes="16x16">
+    <!--lib-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('lib/bootstrap/dist/css/bootstrap.min.css') }}">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.9/angular-route.js"></script>
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+    <!-- javascript -->
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+    <!--My files-->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <!--slider-->
+    <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
+    <script src="{{ asset('js/slider.js') }}"></script>
+  </head>
+  <body ng-controller="FormController">
+    {# Include Navbar #}
+    {% include 'includes/navbar.html.twig' %}
+    {% block content %}{% endblock %}
+    {# Include Footer#}
+    {% include 'includes/footer.html.twig' %}
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/highlight.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+{# templates/pages/index.html.twig #}
+{% extends 'includes/app.html.twig' %}
+
+{# page title #}
+{% block title %} Cloudhead Technologies Private Limited {% endblock %}
+
+{# Meta Description #}
+{% block meta_description %} Cloudhead Technologies is an Information Technology Solutions
+    & Services provider, specializing in Web and Application Development, Mobile Application,
+    Business Process Operations & Automations, E-commerce, ISO Consulting - Audits - Certifications,
+    Process Consulting, Cloud and IT Security Consulting and Training provider.{% endblock %}
+
+{# Content goes here #}
+{% block content %}
+<div class="services_con cf">
+	<div class="max_width_800px">
+		<img src="img/services/responsive_web_design.png" class="img-responsive" alt="Responsive web design">
+	</div>
+	<br>
+	<div class="col-md-8 services_paragraph">
+		<p><strong><i>Almost every new client</i></strong> these days wants a mobile
+			version of their website. It’s practically essential
+			after all: one design for the Android, another
+			for the iPhone, the iPad, netbook, Kindle — and all
+			screen resolutions must be compatible, too. In the
+			next five years, we’ll likely need to design for a
+			number of additional inventions. When will the madness
+			stop? It won’t, of course.</p>
+			<p>
+				In the field of Web design and development, we’re
+				quickly getting to the point of being unable to keep
+				up with the endless new resolutions and devices.
+				For many websites, creating a website version for
+				each resolution and new device would be impossible,
+				or at least impractical. Should we just suffer the
+				consequences of losing visitors from one device,
+				for the benefit of gaining visitors from another?
+				Or is there another option?
+			</p>
+			<div class="s_question_con">
+				<div class="s_q">
+					<h4>What is Responsive Web design?</h4>
+				</div>
+				<div class="s_a">
+					<p>
+						Responsive Web design is the approach that suggests
+						that design and development should respond to the
+						user’s behavior and environment based on screen size,
+						platform and orientation.
+					</p>
+					<p>
+						The practice consists of a mix of flexible grids and layouts,
+						images and an intelligent use of CSS media queries. As the user
+						switches from their laptop to iPad, the website should
+						automatically switch to accommodate for resolution, image
+						size and scripting abilities. In other words, the website
+						should have the technology to automatically respond to the
+						user’s preferences. This would eliminate the need for a
+						different design and development phase for each new gadget
+						on the market.
+					</p>
+				</div>
+			</div>
+	</div>
+	<div class="col-md-4 services_links ">
+		<ul class="list-group box-shadow">
+			<li class="list-group-item heading">
+				<h4>Related Links</h4></li>
+			<li class="list-group-item"><a href="responsive-web-design">Responsive Web Design</a></li>
+			<li class="list-group-item"><a href="seo-friendly-web-design">SEO Friendly Web Design</a></li>
+			<li class="list-group-item"><a href="static-dynamic-web-design">Static Dynamic Website Building</a></li>
+			<li class="list-group-item"><a href="psd-to-html">PSD to HTML</a></li>
+			<li class="list-group-item"><a href="wordpress-websites">Wordpress Websites</a></li>
+		</ul>
+	</div>
+</div>
+{% endblock %}

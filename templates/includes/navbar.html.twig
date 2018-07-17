@@ -1,0 +1,162 @@
+<div class="nav0">
+    <ul class="cf first_bar">
+    	<li>
+    		{% if app.user %}
+          <a href="{{ logout_path('main') }}" class="btn-danger">Logout</a>
+        {% endif %}
+    	</li>
+        <li class="nav_sci_a"><a target="_blank" href="https://www.linkedin.com/in/cloudhead-technologies-472568160"><span class="fa fa-linkedin"></span></a></li>
+        <li class="nav_sci_a"><a target="_blank" href=""><span class="fa fa-twitter"></span></a></li>
+        <li class="nav_sci_a"><a target="_blank" href=""><span class="fa fa-facebook"></span></a></li>
+        <li class="search-li">
+            <div class="search-anything-icon">
+              <span class="fa fa-search"></span>
+            </div>
+            <div class="search-anything">
+                <input type="text" placeholder="Search">
+            </div>
+        </li>
+        <li><a href="/contact">Contact</a>
+        </li>
+        <li><a href="">FAQ</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+        <li><a>Company <span class="fa fa-angle-down"></span> </a>
+          <ul>
+            <li><a href="/overview">Overview</a></li>
+            <li><a href="/story">Story</a></li>
+            <li><a href="/team">Team</a></li>
+            <li><a href="/career">Career</a></li>
+            <li><a href="/clients">Our Clients</a></li>
+            <li><a href="/works">Works</a></li>
+          </ul>
+        </li>
+        <li><a href="/home">Home</a></li>
+    </ul>
+    <ul class="cf second_bar">
+        <li>
+            <a href="" class="green-background"><span class="fa fa-quote-right"></span> Get a quote</a>
+        </li>
+        <li>
+            <a href="tel:9038069355"><span class="fa fa-mobile"></span> 9038069355</a>
+        </li>
+        <li>
+            <a href="mailto:info@cloudheadtechnologies.com"><span class="fa fa-envelope"></span> info@cloudheadtechnologies.com</a>
+        </li>
+        <li>
+            <a href="/iso-certifications" style="width: 180px; background-color: #e0802c"><span><img src="img/quality.svg" style="max-width: 22px; max-height: 22px; position: relative; top: -1px"></span> Iso Certification</a>
+        </li>
+    </ul>
+    <div class="logo">
+        <a href="/home"><img src="{{ asset('img/logo.png') }}" alt="Cloudhead Technologies Private Limited"></a>
+        <a target="_blank" href="http://dgdmspl.com"><img src="{{ asset('img/dgd.png') }}" alt="Cloudhead Technologies Private Limited"></a>
+    </div>
+</div>
+<div class="nav1">
+    <ul class="mega_ul maga_ul cf">
+        <li class="mega_li mli_web_design" data-controller="mli_web_design"><a>Web Design <span class="fa fa-angle-down"></span></a>
+        </li>
+        <li class="mega_li mli_web_development" data-controller="mli_web_development"><a>Web Development <span class="fa fa-angle-down"></span></a>
+        </li>
+        <li class="mega_li mli_e_commerce" data-controller="mli_e_commerce"><a>E-commerce Portal <span class="fa fa-angle-down"></span></a>
+        </li>
+        <li class="mega_li mli_digital_markating" data-controller="mli_digital_markating"><a>Digital Marketing <span class="fa fa-angle-down"></span></a>
+        </li>
+        <li class="mega_li mli_mobile_app_development" data-controller="mli_mobile_app_development"><a>Mobile App Development <span class="fa fa-angle-down"></span></a>
+        </li>
+    </ul>
+    <div class="mega_menu cf">
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-md-3 mm_col">
+            <div class="mm_col_heading">
+              <span>
+                <img src="{{ asset('img/mega-menu/web-design.png') }}" alt="Web Design">
+              </span>
+              <span>
+                Web Design
+              </span>
+            </div>
+            <div class="mm_content">
+              <ul class="mega_ul mul_web_design" data-controller="mul_web_design">
+                <li><a href="/responsive-web-design">Responsive Web Design</a></li>
+                <li><a href="/seo-friendly-web-design">SEO Friendly Web Design</a></li>
+                <li><a href="/static-dynamic-web-design">Static Dynamic Website Building</a></li>
+                <li><a href="/psd-to-html">PSD to HTML</a></li>
+                <li><a href="/wordpress-websites">Wordpress Websites</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 mm_col">
+            <div class="mm_col_heading">
+              <span>
+                <img src="{{ asset('img/mega-menu/web-development.png') }}" alt="Web Development">
+              </span>
+              <span>
+                Web Development
+              </span>
+            </div>
+            <div class="mm_content">
+              <ul class="mega_ul mul_web_development" data-controller="mul_web_development">
+                <li><a href="/php-web-application">PHP Web Application</a></li>
+                <li><a href="/wordpress-joomla-drupal">Wordpress, Joomla, Drupal</a></li>
+                <li><a href="/blog-design">Blog Design</a></li>
+                <li><a href="/php-frameworks">Laravel, Symfony, Codeigniter, Yii Framework</a></li>
+            </ul>
+            </div>
+          </div>
+          <div class="col-md-3 mm_col">
+            <div class="mm_col_heading">
+              <span>
+                <img src="{{ asset('img/mega-menu/e-commerce.png') }}" alt="E-commerce Platform">
+              </span>
+              <span>
+                E-commerce Platform
+              </span>
+            </div>
+            <div class="mm_content">
+              <ul class="mega_ul mul_e_commerce" data-controller="mul_e_commerce">
+                <li><a href="/ecommerce-portal#magento" class="scrollaction">Magento</a></li>
+                <li><a href="/ecommerce-portal#wp_ecommerce" class="scrollaction">Wordpress E-commerce</a></li>
+                <li><a href="/ecommerce-portal#shopify" class="scrollaction">Shopify</a></li>
+                <li><a href="/ecommerce-portal#opencart" class="scrollaction">OpenCart</a></li>
+            </ul>
+            </div>
+          </div>
+          <div class="col-md-3 mm_col">
+            <div class="mm_col_heading">
+              <span>
+                <img src="{{ asset('img/mega-menu/digital-markating.png') }}" alt="Digital Markating">
+              </span>
+              <span>
+                Digital Markating
+              </span>
+            </div>
+            <div class="mm_content">
+              <ul class="mega_ul mul_digital_markating" data-controller="mul_digital_markating">
+      					<li><a href="/pay-per-click">Pay per click</a></li>
+      					<li><a href="/social-media-promotion">Social Media Promotion</a></li>
+      					<li><a href="/email-markating">Email Marketing</a></li>
+      				</ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mm_col">
+        <div class="mm_col_heading">
+          <span>
+            <img src="{{ asset('img/mega-menu/mobile-app-development.png') }}" alt="Mobile App Development">
+          </span>
+          <span>
+            Mobile App Development
+          </span>
+        </div>
+        <div class="mm_content">
+          <ul class="mega_ul mul_mobile_app_development" data-controller="mul_mobile_app_development">
+            <li><a href="/android-app-development">Android App Development</a></li>
+            <li><a href="/ios-app-development">iOS App development</a></li>
+            <li><a href="/cross-platform-app-development">Cross Platform App Development</a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+</div>

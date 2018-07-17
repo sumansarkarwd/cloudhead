@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:300|Varela+Round|Zilla+Slab');
+
+body, h1, h2, h3, h4, h5, h6, a, p, ul{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+a:focus{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+.cf:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.nav0{
+  background-color: #ebeef0;
+  position: relative;
+  height: 95px;
+}
+.logo{
+  width: 100%;
+  max-width: 120px;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  z-index: 1;
+}
+.logo a img{
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+.nav0 ul{
+  text-align: center;
+}
+.nav0 ul li{
+  float: right;
+}
+.nav0 ul li a{
+  color: #0e355a;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 8px 10px;
+  display: block;
+  margin: 10px 8px;
+  transition: background .2s ease-in-out;
+  border-radius: 8px;
+  letter-spacing: 1px;
+}
+.nav0 ul li a:hover{
+  color: #fff;
+  background-color: #00c06b;
+}
+.nav_sci_a a{
+  margin: 10px 5px !important; 
+}
+.nav0 ul li .search-anything input{
+  height: 35px;
+  width: 250px;
+  border: 1px solid #4979a7;
+  padding: 0 8px;
+  margin: 10px 10px;
+}   
+.nav0 ul li .search-anything input::placeholder{
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #4979a7;
+}
+
+.nav1{
+  position: relative;
+}
+.nav1 ul{
+  text-align: center;
+}
+.nav1 ul li{
+  float: left;
+  width: calc(100% / 5);
+}
+.nav1 ul li a{
+  font-family: 'Varela Round', sans-serif;
+  font-size: 16px;
+  display: block;
+  padding: 10px 0;
+  background-color: #0083fe;
+  color: #fff;
+  border: 2px solid #0e355a;
+  border-left: 1px solid #0e355a;
+  border-right: 1px solid #0e355a;
+  transition: background .2s ease-in-out;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.nav1 ul li a span{
+  position: relative;
+  top: 1px;
+}
+.nav1 ul li a:hover{
+  background-color: #00c06b;
+}
+.mega_menu{
+  width: 100%;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: #fff;
+  z-index: 200;
+  display: none;
+}
+.mega_li:hover .mega_menu{
+  display: block;
+}
+
+.mega_menu_con{
+  position: relative;
+  width: 100%;
+  padding: 15px;
+}

@@ -1,0 +1,33 @@
+{% extends ('includes/app.html.twig') %}
+{% block title %}Addresses{% endblock %}
+{% block content %}
+
+<div class="container admin-area-container">
+    {{ form_start(address_form, {attr: {novalidate: 'novalidate'}}) }}
+    	<div class="form-group">
+    		{{ form_label(address_form.a_name, 'Name') }}
+            {{ form_errors(address_form.a_name) }}
+            {{ form_widget(address_form.a_name, {'attr':{'class':'form-control'}}) }}
+    	</div>
+    	<div class="form-group">
+    		{{ form_label(address_form.a_route, 'Route') }}
+            {{ form_errors(address_form.a_route) }}
+            {{ form_widget(address_form.a_route, {'attr':{'class':'form-control'}}) }}
+    	</div> 
+    	<div class="form-group">
+    		{{ form_label(address_form.a_main_code, 'Main code') }}
+            {{ form_errors(address_form.a_main_code) }}
+            {{ form_widget(address_form.a_main_code, {'attr':{'class':'form-control'}}) }}
+    	</div> 
+    	<div class="form-group">
+    		{{ form_label(address_form.a_parent_code, 'Parent code') }}
+            {{ form_errors(address_form.a_parent_code) }}
+            {{ form_widget(address_form.a_parent_code, {'attr':{'class':'form-control'}}) }}
+    	</div> 
+    	<div class="form-group">
+            {{ form_widget(address_form.submit, {'attr':{'class':'btn btn-success'}}) }}
+    	</div> 
+    {{ form_end(address_form) }}  
+</div>
+
+{% endblock %}

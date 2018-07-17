@@ -1,0 +1,53 @@
+{# templates/pages/index.html.twig #}
+{% extends 'includes/app.html.twig' %}
+
+{# page title #}
+{% block title %} Cloudhead Technologies Private Limited {% endblock %}
+
+{# Meta Description #}
+{% block meta_description %} Cloudhead Technologies is an Information Technology Solutions
+    & Services provider, specializing in Web and Application Development, Mobile Application,
+    Business Process Operations & Automations, E-commerce, ISO Consulting - Audits - Certifications,
+    Process Consulting, Cloud and IT Security Consulting and Training provider.{% endblock %}
+
+{# Content goes here #}
+{% block content %}
+<div class="services_con cf">
+	<div class="max_width_800px">
+		<img src="img/services/psd_to_html.png" class="img-responsive" alt="Responsive web design">
+	</div>
+	<br>
+	<div class="col-md-8 services_paragraph">
+		<div class="s_question_con">
+			<div class="s_q">
+				<h4>What is PSD to HTML?</h4>
+			</div>
+			<div class="s_a">
+				<p class="text-justify">
+					In general, “PSD to HTML” is a workflow. First, a web page is designed in a Photoshop Document (PSD) and then converted to code (using HTML, CSS, and JavaScript). You could swap Photoshop with any other image editor (like Pixelmator, GIMP, and so on),
+					but the principle is the same. Here’s a slightly more detailed step-by-step breakdown:
+				</p>
+				<ul class="list-group box-shadow">
+					<li class="list-group-item">Design a high fidelity pixel-perfect mockup in Photoshop of exactly what you want your site to look like.</li>
+					<li class="list-group-item">Use the slice tool to divide your website’s imagery and then export it for the web.</li>
+					<li class="list-group-item">Write HTML and CSS that utilizes the imagery you exported from Photoshop.</li>
+				</ul>
+				<p class="text-justify">
+					Taking this idea further, many web companies have used PSD to HTML as a template for team workflows. In other words, a designer creates the Photoshop mockup and then hands it over to a developer that writes all of the code. In modern times, the job role of a web designer tends to encompass aesthetics as well as HTML and CSS coding.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4 services_links">
+		<ul class="list-group box-shadow">
+			<li class="list-group-item heading">
+				<h4>Related Links</h4></li>
+			<li class="list-group-item"><a href="responsive-web-design">Responsive Web Design</a></li>
+			<li class="list-group-item"><a href="seo-friendly-web-design">SEO Friendly Web Design</a></li>
+			<li class="list-group-item"><a href="static-dynamic-web-design">Static Dynamic Website Building</a></li>
+			<li class="list-group-item"><a href="psd-to-html">PSD to HTML</a></li>
+			<li class="list-group-item"><a href="wordpress-websites">Wordpress Websites</a></li>
+		</ul>
+	</div>
+</div>
+{% endblock %}

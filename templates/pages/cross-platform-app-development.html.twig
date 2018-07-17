@@ -1,0 +1,64 @@
+{# templates/pages/index.html.twig #}
+{% extends 'includes/app.html.twig' %}
+
+{# page title #}
+{% block title %} Cloudhead Technologies Private Limited {% endblock %}
+
+{# Meta Description #}
+{% block meta_description %} Cloudhead Technologies is an Information Technology Solutions
+    & Services provider, specializing in Web and Application Development, Mobile Application,
+    Business Process Operations & Automations, E-commerce, ISO Consulting - Audits - Certifications,
+    Process Consulting, Cloud and IT Security Consulting and Training provider.{% endblock %}
+
+{# Content goes here #}
+{% block content %}
+<div class="services_con cf">
+	<div class="max_width_800px">
+		<img src="img/services/cross_platform_app_development.jpg" class="img-responsive" alt="Cross Platform App Development">
+	</div>
+	<br>
+	<div class="col-md-8 services_paragraph">
+		<p>
+			Cross-platform mobile development refers to the development of
+			mobile apps that can be used on multiple mobile platforms. In the
+			business world, a growing trend called BYOD (Bring Your Own Device)
+			is rising. BYOD refers to employees bringing their own personal
+			mobile device into the workplace to be used in place of traditional
+			desktop computers or company-provided mobile devices for accessing
+			company applications and data. Because of BYOD, it has become
+			necessary for businesses to develop their corporate mobile apps
+			and be able to send them to many different mobile devices that
+			operate on various networks and use different operating systems.
+		</p>
+			<p>
+				Cross-platform mobile development can either involve a company
+				developing the original app on a native platform (which could be
+				iOS, Android, Windows Mobile, BlackBerry/RIM, etc.) or developing
+				the original app in a singular environment for development that
+				will then allow the app to be sent to many different native
+				platforms. There are both pros and cons to cross-platform mobile
+				app development. These tools are useful because they decrease
+				costs and increase the speed at which apps are developed. In
+				addition, cross-platform mobile development tools are generally
+				quite simple to use as they are based off of the common languages
+				for scripting, including CSS, HTML, and JavaScript.
+			</p>
+			<p>
+				However, cross-platform mobile development does have a few drawbacks.
+				First, mobile operating systems are frequently updated. Whenever
+				a mobile operating system receives a new update, the applications
+				must also be updated to be compatible with the new system. In addition,
+				rendering times with cross-platform mobile development may be longer
+				as each operating system needs a separate set of code.
+			</p>
+	</div>
+	<div class="col-md-4 services_links ">
+		<ul class="list-group box-shadow">
+			<li class="list-group-item heading"><h4>Related Links</h4></li>
+			<li class="list-group-item"><a href="android-app-development">Android App Development</a></li>
+			<li class="list-group-item"><a href="ios-app-development">iOS App development</a></li>
+			<li class="list-group-item"><a href="cross-platform-app-development">Cross Platform App Development</a></li>
+		</ul>
+	</div>
+</div>
+{% endblock %}

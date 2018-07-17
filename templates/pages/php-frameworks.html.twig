@@ -1,0 +1,123 @@
+{# templates/pages/index.html.twig #}
+{% extends 'includes/app.html.twig' %}
+
+{# page title #}
+{% block title %} Cloudhead Technologies Private Limited {% endblock %}
+
+{# Meta Description #}
+{% block meta_description %} Cloudhead Technologies is an Information Technology Solutions
+    & Services provider, specializing in Web and Application Development, Mobile Application,
+    Business Process Operations & Automations, E-commerce, ISO Consulting - Audits - Certifications,
+    Process Consulting, Cloud and IT Security Consulting and Training provider.{% endblock %}
+
+{# Content goes here #}
+{% block content %}
+<div class="services_con cf">
+	<div class="max_width_800px">
+		<img src="img/services/php_frameworks.jpeg" class="img-responsive" alt="Blog Desing">
+	</div>
+	<br>
+	<div class="col-md-8 services_paragraph">
+		<div class="s_question_con">
+			<div class="s_q">
+				<h4>What is a PHP Framework?</h4>
+			</div>
+			<div class="s_a">
+				<p class="text-justify">
+					A PHP Framework is a basic platform that allows us to develop
+					web applications. In other words, it provides structure. By
+					using a PHP Framework, you will end up saving loads of time,
+					stopping the need to produce repetitive code, and you’ll be
+					able to build applications rapidly (RAD). Without a PHP Framework
+					in place, it gets much more difficult to produce applications
+					since you’ll have to repeatedly code a lot of PHP. You’ll also
+					have to execute the connection between your database and whatever
+					application you develop from scratch. Meanwhile, using a PHP
+					Framework makes it easier for you to ensure this connection.
+				</p>
+			</div>
+			<ul class="list-group box-shadow">
+				<li class="list-group-item current">
+					<div class="fw cf">
+						<div class="col-sm-2 fw_i">
+							<img src="img/services/frameworks/laravel.png" class="img-responsive" alt="Laravel Logo">
+						</div>
+						<div class="col-sm-10 fw_t">
+							<p>Laravel is a free, open-source PHP web framework, created by
+								Taylor Otwell and intended for the development of web applications
+								following the model–view–controller (MVC) architectural pattern
+								and based on Symfony. Some of the features of Laravel are a modular
+								packaging system with a dedicated dependency manager, different
+								ways for accessing relational databases, utilities that aid in
+								application deployment and maintenance, and its orientation
+								toward syntactic sugar.
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item my_accordion">
+					<div class="fw cf">
+						<div class="col-sm-2 fw_i">
+							<img src="img/services/frameworks/symfony.png" class="img-responsive" alt="Symfony Logo">
+						</div>
+						<div class="col-sm-10 fw_t">
+							<p>Symfony as a PHP framework is well suited for large-scale or
+								complex enterprise level projects. It is a quite stable framework.
+								Symfony 3.1 (the current version) helps developers create scalable
+								websites that are flexible to changing business requirements.
+								Symfony can work with some of the largest open source platforms
+								such as PHPBB, Piwik, and Drupal.
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item my_accordion">
+					<div class="fw cf">
+						<div class="col-sm-2 fw_i">
+							<img src="img/services/frameworks/codeigniter.png" class="img-responsive" alt="Codeigniter Logo">
+						</div>
+						<div class="col-sm-10 fw_t">
+							<p>CodeIgniter is loosely based on the popular model–view–controller(MVC)
+								development pattern. While controller classes are a necessary part of
+								development under CodeIgniter, models and views are optional. Codeigniter
+								can be also modified to use Hierarchical Model View Controller
+								which allows developers to maintain modular grouping of Controller,
+								Models and View arranged in a sub-directory format.
+							</p>
+							<p>
+								CodeIgniter is most often noted for its speed when compared to other
+								PHP frameworks. In a critical take on PHP frameworks in general,
+								PHP creator Rasmus Lerdorf spoke at frOSCon in August 2008, noting that
+								he liked CodeIgniter "because it is faster, lighter and the least like
+								a framework."
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item my_accordion">
+					<div class="fw cf">
+						<div class="col-sm-2 fw_i">
+							<img src="img/services/frameworks/yii.png" class="img-responsive" alt="Yii Framework Logo">
+						</div>
+						<div class="col-sm-10 fw_t">
+							<p>Yii is an open source, object-oriented, component-based MVC PHP
+								web application framework. Yii is pronounced as "Yee" or [ji:]
+								and in Chinese it means "simple and evolutionary" and it can be
+								an acronym for "Yes It Is!"</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="col-md-4 services_links ">
+		<ul class="list-group box-shadow">
+			<li class="list-group-item heading"><h4>Related Links</h4></li>
+			<li class="list-group-item"><a href="php-web-application">PHP Web Application</a></li>
+			<li class="list-group-item"><a href="wordpress-joomla-drupal">Wordpress, Joomla, Drupal</a></li>
+			<li class="list-group-item"><a href="blog-design">Blog Design</a></li>
+			<li class="list-group-item"><a href="php-frameworks">Laravel, Symfony, Codeigniter</a></li>
+		</ul>
+	</div>
+</div>
+{% endblock %}

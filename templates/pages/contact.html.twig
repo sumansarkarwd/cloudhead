@@ -1,0 +1,88 @@
+{# templates/pages/index.html.twig #}
+{% extends 'includes/app.html.twig' %}
+
+{# page title #}
+{% block title %} Cloudhead Technologies Private Limited {% endblock %}
+
+{# Meta Description #}
+{% block meta_description %} Cloudhead Technologies is an Information Technology Solutions
+    & Services provider, specializing in Web and Application Development, Mobile Application,
+    Business Process Operations & Automations, E-commerce, ISO Consulting - Audits - Certifications,
+    Process Consulting, Cloud and IT Security Consulting and Training provider.{% endblock %}
+
+{# Content goes here #}
+{% block content %}
+<div class="contact_us cf"  ng-app="myApp">
+	<div class="col-md-6 contact_us_element contact_us_info">
+		<h1>Contact Us</h1>
+		<div class=" col-lg-12 c_address">
+			<div class="row">
+				<h4>Address</h4>
+				<p>
+					Jagaddhatri Apartment<br> 114, Feeder Road, Belgharia<br> Kolkata – 700056, India
+				</p>
+			</div>
+		</div>
+		<div id="suman"></div>
+		<div class=" col-lg-12 cd_info">
+			<div class="row">
+				<h4>Phone</h4>
+				<p>
+					+(91) 9038069355<br>+(91) 9874400015
+				</p>
+				<h4>Email</h4>
+				<p>
+				<a href="mailto:info@cloudheadtechnologies.com">info@cloudheadtechnologies.com</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6 contact_us_element contact_us_map">
+		<div id="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.7954412720746!2d88.38584961445446!3d22.661414235416906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89d41cf9fc1fd%3A0x2875fb1ebc1cc0e!2sCloudhead+Technologies+Pvt+Ltd!5e0!3m2!1sen!2sin!4v1528878895941" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="col-lg-12 enquiry text-center">
+		<h2>Enquiry</h2>
+		<p>Tell us how we can help with our online enquiry form!</p>
+		<div class="enquiry-box cf">
+			<h3 ng-show="submit_feedback" class="submit_feedback">Your form has been submitted successfully! <span class="fa fa-check-circle"></span></h3>
+			<div class="row">
+				<form ng-submit="getFormData()" name="contactForm" novalidate="">
+					<div class="form col-sm-4 form-group">
+						<input type="text" class="" placeholder="Name *" ng-model="name" ng-required="true">
+					</div>
+					<div class="form col-sm-4 form-group">
+						<input type="email" class="" placeholder="Email *" ng-model="email" ng-required="true">
+					</div>
+					<div class="form col-sm-4 form-group">
+						<input type="text" class="" placeholder="Phone *" ng-model="phone" ng-required="true">
+					</div>
+					<div class="form-group col-sm-8 text-left f_m_30">
+						<label for="#enquiry_message">Would you like to ask us any questions?*</label>
+						<textarea class="" rows="6" id="enquiry_message" ng-required="true" ng-model="message"></textarea>
+					</div>
+					<div class="form-group col-sm-4 text-left f_m_30">
+						<label for="#enquiry_message">Where did you hear about us?*</label>
+						<div class="f_radio">
+							<label>Google</label>
+							<input type="radio" name="f_ref" ng-model="f_ref" value="Google" ng-required="true">
+						</div>
+						<div class="f_radio">
+							<label>A friend</label>
+							<input type="radio" name="f_ref" ng-model="f_ref" value="A friend" ng-required="true">
+						</div>
+						<div class="f_radio">
+							<label>Social Media</label>
+							<input type="radio" name="f_ref" ng-model="f_ref" value="Social Media" ng-required="true">
+						</div>
+					</div>
+					<div class="form-group col-sm-12 text-left">
+						<button class="btn pull-left" ng-disabled="contactForm.$invalid" name="submit" type="submit">Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
